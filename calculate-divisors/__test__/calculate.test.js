@@ -1,6 +1,6 @@
 const calculateDivisors = require("../calculate-divisors.js");
 
-xdescribe("calculateDivisors", () => {
+describe.only("calculateDivisors", () => {
   test("should return a number", () => {
     expect(typeof calculateDivisors()).toBe("number");
   });
