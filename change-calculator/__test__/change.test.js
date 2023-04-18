@@ -1,6 +1,6 @@
 const changeCalculator = require("../change-calculator");
 
-describe.only("calculate change", () => {
+describe("calculate change", () => {
   test("should return an object", () => {
     expect(typeof changeCalculator()).toEqual("object");
   });

@@ -1,7 +1,17 @@
-const dnaPairs = require('../dna-pairs.js');
+const dnaPairs = require("../dna-pairs.js");
 
-describe('dnaPairs()', () => {
-  test('ADD YOUR TEST DESCRIPTION HERE', () => {
-    // add your test assertion(s) here
+describe("dnaPairs()", () => {
+  test('should return [ ["G", "C"] ]', () => {
+    expect(dnaPairs("G")).toEqual([["G", "C"]]);
+    expect(dnaPairs("AG")).toEqual([
+      ["A", "T"],
+      ["G", "C"],
+    ]);
+    expect(dnaPairs("ATAG")).toEqual([
+      ["A", "T"],
+      ["T", "A"],
+      ["A", "T"],
+      ["G", "C"],
+    ]);
   });
 });
